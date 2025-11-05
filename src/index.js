@@ -4,10 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function Car() {
+  return (
+    <h2>Hi Im a Component React Function without exporting</h2>
+  );
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <Car/>
   </React.StrictMode>
 );
 
