@@ -9,11 +9,20 @@ function Car() {
     <h2>Hi Im a Component React Function without exporting</h2>
   );
 }
+
+function Garage() {
+  return (
+    <diV>
+    <h1>Hi im a Component inside a another component</h1>
+    <Car/>
+    </diV>
+  )
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <Car/>
+    <Garage/>
   </React.StrictMode>
 );
 
